@@ -502,7 +502,7 @@
     list.forEach(e=>{ if(e.name===name && e.score>m) m = e.score; });
     return m;
   }
-  const BASELINE_ENTRY = { name: '卢旭', score: 2048, date: '基准记录' };
+  const BASELINE_ENTRY = { name: '卢殷知', score: 99999, date: '基准记录' };
 
   function renderLeaderboard(){
     const stored = loadLeaderboard();
@@ -603,7 +603,7 @@
     milestonePopup.classList.add('show');
     milestoneTimer = setTimeout(function(){
       milestonePopup.classList.remove('show');
-    }, 300);
+    }, 600);
   }
 
   function cloneBoardValues(){

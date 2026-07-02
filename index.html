@@ -298,11 +298,11 @@
   .leaderboard-btn{
     background:transparent;
     color:var(--ink);
-    border:1px solid rgba(255,255,255,0.25);
+    border:2px solid rgba(255,255,255,0.25);
     border-radius:8px;
     padding:9px 14px;
     font-family:'Space Grotesk', sans-serif;
-    font-weight:500;
+    font-weight:850;
     font-size:13px;
     cursor:pointer;
   }
@@ -632,7 +632,7 @@
     list.forEach(e=>{ if(e.name===name && e.score>m) m = e.score; });
     return m;
   }
-  const BASELINE_ENTRY = { name: '卢旭', score: 2048, date: '基准记录' };
+  const BASELINE_ENTRY = { name: '卢殷知', score: 99999, date: '基准记录' };
 
   function renderLeaderboard(){
     const stored = loadLeaderboard();
